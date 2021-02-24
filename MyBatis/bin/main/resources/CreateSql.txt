@@ -1,0 +1,18 @@
+CREATE DATABASE car;
+
+USE car;
+
+CREATE TABLE cars (
+	id INT NOT NULL,
+	brand VARCHAR(10),
+	type VARCHAR(20),
+	door INT(2),
+	year INT(4),
+	engineCode VARChAR(10),
+	transmission VARCHAR(10),
+	price INT(8),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO cars VALUES (1,'Seat','Toledo','5',2003, 'BCB', 'manual5', 500000);
+INSERT INTO cars VALUES (2,'Toyota','Celica','3',2000, 'ZZ1', 'manual6', 1000000);
